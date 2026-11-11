@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriHub - Criar Conta</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/cadastro.css">
+</head>
+<body>
+
+  <main class="auth-container">
+    <!-- LADO ESQUERDO — APRESENTAÇÃO DA MARCA -->
+    <section class="brand-side">
+      <header class="brand-header">
+        <a href="#" class="brand-logo" aria-label="NutriHub Página Inicial">
+          <svg class="logo-icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="10" fill="#16A36A"/>
+            <path d="M18 8C12.4772 8 8 12.4772 8 18C8 23.5228 12.4772 28 18 28C23.5228 28 28 23.5228 28 18C28 12.4772 23.5228 8 18 8ZM18 25.5C13.8579 25.5 10.5 22.1421 10.5 18C10.5 13.8579 13.8579 10.5 18 10.5V25.5Z" fill="#E8F7EF"/>
+            <path d="M22.5 14.5C22.5 16.7091 20.4853 18.5 18 18.5C15.5147 18.5 13.5 16.7091 13.5 14.5C13.5 12.2909 15.5147 10.5 18 10.5C20.4853 10.5 22.5 12.2909 22.5 14.5Z" fill="#087B50"/>
+          </svg>
+          <span class="brand-name">NutriHub</span>
+        </a>
+      </header>
+
+      <div class="brand-content">
+        <h1 class="brand-title">Transforme sua rotina alimentar com inteligência.</h1>
+        <p class="brand-description">
+          Junte-se ao NutriHub para acessar planos personalizados, acompanhar seus nutrientes em tempo real e alcançar seus objetivos de saúde com leveza e precisão.
+        </p>
+
+        <!-- ILUSTRAÇÃO VETORIAL DA MARCA -->
+        <div class="illustration-container">
+          <svg class="brand-illustration" viewBox="0 0 400 300" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustração de alimentação saudável e evolução técnica">
+            <circle cx="200" cy="150" r="120" fill="#E8F7EF"/>
+            <circle cx="200" cy="150" r="85" fill="#FFFFFF" stroke="#E1EAE4" stroke-width="2"/>
+            <path d="M170 120 C170 95, 230 95, 230 120 C230 145, 170 145, 170 120 Z" fill="#16A36A" opacity="0.85"/>
+            <path d="M200 120 Q215 150 200 180 Q185 150 200 120 Z" fill="#087B50"/>
+            <circle cx="240" cy="110" r="6" fill="#16A36A"/>
+            <circle cx="160" cy="190" r="8" fill="#16A36A" opacity="0.4"/>
+            <path d="M120 150 Q120 100 170 100" stroke="#16A36A" stroke-width="3" stroke-linecap="round" stroke-dasharray="4 4"/>
+            <path d="M280 150 Q280 200 230 200" stroke="#16A36A" stroke-width="3" stroke-linecap="round"/>
+            <rect x="260" y="180" width="40" height="24" rx="6" fill="#FFFFFF" stroke="#E1EAE4"/>
+            <path d="M268 192 L274 197 L292 187" stroke="#16A36A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <!-- LADO DIREITO — FORMULÁRIO DE CADASTRO -->
+    <section class="form-side">
+      <div class="auth-card">
+        <div class="card-header">
+          <h2 class="card-title">Crie sua conta</h2>
+          <p class="card-subtitle">Preencha seus dados para começar gratuitamente.</p>
+        </div>
+
+        <form id="signup-form" class="auth-form" novalidate>
+          <!-- CAMPO NOME COMPLETO -->
+          <div class="form-group">
+            <label for="name" class="form-label">Nome completo</label>
+            <div class="input-wrapper">
+              <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <input 
+                type="text" 
+                id="name" 
+                name="name" 
+                class="form-input" 
+                placeholder="Seu nome completo" 
+                required 
+                aria-required="true" 
+                aria-describedby="name-error"
+                autocomplete="name"
+              >
+            </div>
+            <span id="name-error" class="error-message" role="alert" aria-live="polite"></span>
+          </div>
+
+          <!-- CAMPO E-MAIL -->
+          <div class="form-group">
+            <label for="email" class="form-label">E-mail</label>
+            <div class="input-wrapper">
+              <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+              <input 
+                type="email" 
+                id="email" 
+                name="email" 
+                class="form-input" 
+                placeholder="seu.email@exemplo.com" 
+                required 
+                aria-required="true" 
+                aria-describedby="email-error"
+                autocomplete="email"
+              >
+            </div>
+            <span id="email-error" class="error-message" role="alert" aria-live="polite"></span>
+          </div>
+
+          <!-- CAMPO SENHA -->
+          <div class="form-group">
+            <label for="password" class="form-label">Senha</label>
+            <div class="input-wrapper">
+              <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <input 
+                type="password" 
+                id="password" 
+                name="password" 
+                class="form-input" 
+                placeholder="Crie uma senha forte" 
+                required 
+                aria-required="true" 
+                aria-describedby="password-error"
+                autocomplete="new-password"
+              >
+              <button 
+                type="button" 
+                class="toggle-password" 
+                aria-label="Mostrar senha" 
+                aria-pressed="false"
+              >
+                <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </button>
+            </div>
+            <span id="password-error" class="error-message" role="alert" aria-live="polite"></span>
+          </div>
+
+          <!-- CAMPO CONFIRMAR SENHA -->
+          <div class="form-group">
+            <label for="confirm-password" class="form-label">Confirmar senha</label>
+            <div class="input-wrapper">
+              <svg class="input-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+              </svg>
+              <input 
+                type="password" 
+                id="confirm-password" 
+                name="confirm-password" 
+                class="form-input" 
+                placeholder="Repita sua senha" 
+                required 
+                aria-required="true" 
+                aria-describedby="confirm-password-error"
+                autocomplete="new-password"
+              >
+              <button 
+                type="button" 
+                class="toggle-password" 
+                aria-label="Mostrar confirmação de senha" 
+                aria-pressed="false"
+              >
+                <svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                  <circle cx="12" cy="12" r="3"></circle>
+                </svg>
+              </button>
+            </div>
+            <span id="confirm-password-error" class="error-message" role="alert" aria-live="polite"></span>
+          </div>
+
+          <!-- TERMOS DE USO -->
+          <div class="form-options terms-option">
+            <label class="checkbox-label">
+              <input type="checkbox" id="terms" name="terms" class="custom-checkbox" required aria-required="true">
+              <span class="checkbox-text">Eu aceito os <a href="#" class="link-secondary">Termos de Uso</a> e a <a href="#" class="link-secondary">Política de Privacidade</a></span>
+            </label>
+            <span id="terms-error" class="error-message block-error" role="alert" aria-live="polite"></span>
+          </div>
+
+          <!-- BOTÃO SUBMIT -->
+          <button type="submit" class="btn-primary" id="btn-submit">
+            <span class="btn-text">Criar minha conta</span>
+            <span class="btn-spinner" hidden aria-hidden="true"></span>
+          </button>
+        </form>
+
+        <!-- FOOTER COM LINK DE LOGIN -->
+        <footer class="card-footer">
+          <p class="footer-text">
+            Já possui uma conta? <a href="index.html" class="link-primary">Fazer login</a>
+          </p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const form = document.getElementById('signup-form');
+      const nameInput = document.getElementById('name');
+      const emailInput = document.getElementById('email');
+      const passwordInput = document.getElementById('password');
+      const confirmPasswordInput = document.getElementById('confirm-password');
+      const termsInput = document.getElementById('terms');
+      const submitBtn = document.getElementById('btn-submit');
+      const btnText = submitBtn.querySelector('.btn-text');
+      const btnSpinner = submitBtn.querySelector('.btn-spinner');
+
+      const togglePasswordBtns = document.querySelectorAll('.toggle-password');
+
+      // SVG Ícones Olho Aberto / Fechado
+      const eyeOpenSvg = `<svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>`;
+      const eyeClosedSvg = `<svg class="eye-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17.94 17.94A10.07 10.07 0 0 1 12 20c-7 0-11-8-11-8a18.45 18.45 0 0 1 5.06-5.94M9.9 4.24A9.12 9.12 0 0 1 12 4c7 0 11 8 11 8a18.5 18.5 0 0 1-2.16 3.19m-6.72-1.07a3 3 0 1 1-4.24-4.24"></path><line x1="1" y1="1" x2="23" y2="23"></line></svg>`;
+
+      // Alternar Visibilidade das Senhas
+      togglePasswordBtns.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const input = btn.previousElementSibling;
+          const isPassword = input.type === 'password';
+          
+          input.type = isPassword ? 'text' : 'password';
+          btn.setAttribute('aria-pressed', isPassword ? 'true' : 'false');
+          btn.innerHTML = isPassword ? eyeClosedSvg : eyeOpenSvg;
+        });
+      });
+
+      // Validação de E-mail por RegEx
+      function isValidEmail(email) {
+        return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      }
+
+      // Função de Exibição de Erro
+      function showError(input, errorElement, message) {
+        if (input && input.classList) {
+          input.classList.add('input-error');
+        }
+        errorElement.textContent = message;
+      }
+
+      // Limpar Erro
+      function clearError(input, errorElement) {
+        if (input && input.classList) {
+          input.classList.remove('input-error');
+        }
+        errorElement.textContent = '';
+      }
+
+      // Validação em Tempo Real nos Inputs
+      nameInput.addEventListener('input', () => {
+        if (nameInput.value.trim().length >= 3) {
+          clearError(nameInput, document.getElementById('name-error'));
+        }
+      });
+
+      emailInput.addEventListener('input', () => {
+        if (isValidEmail(emailInput.value.trim())) {
+          clearError(emailInput, document.getElementById('email-error'));
+        }
+      });
+
+      passwordInput.addEventListener('input', () => {
+        if (passwordInput.value.length >= 6) {
+          clearError(passwordInput, document.getElementById('password-error'));
+        }
+        if (confirmPasswordInput.value && confirmPasswordInput.value === passwordInput.value) {
+          clearError(confirmPasswordInput, document.getElementById('confirm-password-error'));
+        }
+      });
+
+      confirmPasswordInput.addEventListener('input', () => {
+        if (confirmPasswordInput.value === passwordInput.value) {
+          clearError(confirmPasswordInput, document.getElementById('confirm-password-error'));
+        }
+      });
+
+      termsInput.addEventListener('change', () => {
+        if (termsInput.checked) {
+          clearError(null, document.getElementById('terms-error'));
+        }
+      });
+
+      // Submissão do Formulário
+      form.addEventListener('submit', (e) => {
+        e.preventDefault();
+        let isValid = true;
+
+        // Validar Nome
+        if (!nameInput.value.trim()) {
+          showError(nameInput, document.getElementById('name-error'), 'Por favor, informe seu nome completo.');
+          isValid = false;
+        } else if (nameInput.value.trim().length < 3) {
+          showError(nameInput, document.getElementById('name-error'), 'O nome deve ter pelo menos 3 caracteres.');
+          isValid = false;
+        } else {
+          clearError(nameInput, document.getElementById('name-error'));
+        }
+
+        // Validar E-mail
+        if (!emailInput.value.trim()) {
+          showError(emailInput, document.getElementById('email-error'), 'Por favor, insira seu e-mail.');
+          isValid = false;
+        } else if (!isValidEmail(emailInput.value.trim())) {
+          showError(emailInput, document.getElementById('email-error'), 'Insira um endereço de e-mail válido.');
+          isValid = false;
+        } else {
+          clearError(emailInput, document.getElementById('email-error'));
+        }
+
+        // Validar Senha
+        if (!passwordInput.value) {
+          showError(passwordInput, document.getElementById('password-error'), 'Por favor, crie uma senha.');
+          isValid = false;
+        } else if (passwordInput.value.length < 6) {
+          showError(passwordInput, document.getElementById('password-error'), 'A senha deve conter no mínimo 6 caracteres.');
+          isValid = false;
+        } else {
+          clearError(passwordInput, document.getElementById('password-error'));
+        }
+
+        // Validar Confirmação de Senha
+        if (!confirmPasswordInput.value) {
+          showError(confirmPasswordInput, document.getElementById('confirm-password-error'), 'Por favor, confirme sua senha.');
+          isValid = false;
+        } else if (confirmPasswordInput.value !== passwordInput.value) {
+          showError(confirmPasswordInput, document.getElementById('confirm-password-error'), 'As senhas não coincidem.');
+          isValid = false;
+        } else {
+          clearError(confirmPasswordInput, document.getElementById('confirm-password-error'));
+        }
+
+        // Validar Termos
+        if (!termsInput.checked) {
+          showError(null, document.getElementById('terms-error'), 'Você precisa aceitar os Termos e Políticas.');
+          isValid = false;
+        } else {
+          clearError(null, document.getElementById('terms-error'));
+        }
+
+        if (isValid) {
+          // Estado Visual de Carregamento
+          submitBtn.disabled = true;
+          btnText.textContent = 'Criando conta...';
+          btnSpinner.hidden = false;
+
+          // Redireciona para a tela do questionário
+          setTimeout(() => {
+            window.location.href = "../HTML/quest.html";
+          }, 1500);
+        }
+      });
+    });
+  </script>
+
+  <script src="../JAVASCRIPT/app.js" defer></script>
+</body>
+</html>

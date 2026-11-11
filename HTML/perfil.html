@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriHub - Perfil do Usuário</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/perfil.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <a href="home.html" class="brand-logo">
+          <svg class="logo-icon" width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="10" fill="#16A36A"/>
+            <path d="M18 8C12.4772 8 8 12.4772 8 18C8 23.5228 12.4772 28 18 28C23.5228 28 28 23.5228 28 18C28 12.4772 23.5228 8 18 8ZM18 25.5C13.8579 25.5 10.5 22.1421 10.5 18C10.5 13.8579 13.8579 10.5 18 10.5V25.5Z" fill="#E8F7EF"/>
+            <path d="M22.5 14.5C22.5 16.7091 20.4853 18.5 18 18.5C15.5147 18.5 13.5 16.7091 13.5 14.5C13.5 12.2909 15.5147 10.5 18 10.5C20.4853 10.5 22.5 12.2909 22.5 14.5Z" fill="#087B50"/>
+          </svg>
+          <span class="brand-name">NutriHub</span>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <div class="nav-group">
+          <span class="nav-label">Principal</span>
+          <a href="home.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <span>Home</span>
+          </a>
+        </div>
+
+        <div class="nav-group">
+          <span class="nav-label">Alimentação</span>
+          <a href="hist.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Histórico Alimentar</span>
+          </a>
+          <a href="plano.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span>Plano Alimentar</span>
+          </a>
+        </div>
+
+        <div class="nav-group">
+          <span class="nav-label">Acompanhamento</span>
+          <a href="metas.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+            <span>Metas</span>
+          </a>
+          <a href="progresso.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+            <span>Meu Progresso</span>
+          </a>
+          <a href="perfil.html" class="nav-item active">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <span>Meu Perfil</span>
+          </a>
+        </div>
+
+        <div class="nav-group nav-group-bottom">
+          <span class="nav-label">CONFIGURAÇÕES</span>
+          <a href="config.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            <span>Configurações</span>
+          </a>
+          <a href="index.html" class="nav-item nav-logout">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+            <span>Sair da Conta</span>
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <main class="main-content">
+      <header class="page-header">
+        <div class="header-titles">
+          <h1 class="page-title">Perfil Pessoal</h1>
+          <p class="page-description">Preencha seus dados corporais para personalizarmos seus indicadores nutricionais.</p>
+        </div>
+        <div class="header-actions">
+          <div class="user-avatar" id="header-avatar">—</div>
+        </div>
+      </header>
+
+      <form id="perfil-form" class="settings-form">
+        <section class="section-card">
+          <h2 class="section-title">Informações Pessoais</h2>
+          <p class="section-subtitle">Dados cadastrais básicos do seu perfil.</p>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="perfil-name">Nome Completo</label>
+              <input type="text" id="perfil-name" class="form-input" placeholder="Seu nome" required>
+            </div>
+
+            <div class="form-group">
+              <label for="perfil-birth">Data de Nascimento</label>
+              <input type="date" id="perfil-birth" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="perfil-gender">Gênero</label>
+              <select id="perfil-gender" class="form-select" required>
+                <option value="" disabled selected>Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro / Prefiro não informar</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="perfil-activity">Nível de Atividade Física</label>
+              <select id="perfil-activity" class="form-select" required>
+                <option value="" disabled selected>Selecione sua frequência</option>
+                <option value="sedentario">Sedentário (pouco ou nenhum exercício)</option>
+                <option value="leve">Leve (exercício 1 a 3 dias/semana)</option>
+                <option value="moderado">Moderado (exercício 3 a 5 dias/semana)</option>
+                <option value="intenso">Intenso (exercício 6 a 7 dias/semana)</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-card">
+          <h2 class="section-title">Dados Biométricos & Metas</h2>
+          <p class="section-subtitle">Utilizados para o cálculo do seu progresso e metas de hidratação.</p>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="perfil-weight">Peso Atual (kg)</label>
+              <input type="number" id="perfil-weight" class="form-input" placeholder="Ex: 70.5" step="0.1" required>
+            </div>
+
+            <div class="form-group">
+              <label for="perfil-target-weight">Meta de Peso (kg)</label>
+              <input type="number" id="perfil-target-weight" class="form-input" placeholder="Ex: 65.0" step="0.1">
+            </div>
+
+            <div class="form-group full-width">
+              <label for="perfil-height">Altura (cm)</label>
+              <input type="number" id="perfil-height" class="form-input" placeholder="Ex: 175" required>
+            </div>
+          </div>
+        </section>
+
+        <div class="form-actions">
+          <button type="submit" class="btn-primary" id="btn-save-perfil">Salvar e Continuar</button>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <script src="../JAVASCRIPT/app.js"></script>
+</body>
+</html>

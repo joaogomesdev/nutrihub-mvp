@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriHub - Registrar Refeição e Hidratação</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/registro.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+    <!-- SIDEBAR FIXA À ESQUERDA -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <a href="../HTML/home.html" class="brand-logo">
+          <svg class="logo-icon" width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="10" fill="#16A36A"/>
+            <path d="M18 8C12.4772 8 8 12.4772 8 18C8 23.5228 12.4772 28 18 28C23.5228 28 28 23.5228 28 18C28 12.4772 13.8579 10.5 18 10.5V25.5Z" fill="#E8F7EF"/>
+            <path d="M22.5 14.5C22.5 16.7091 20.4853 18.5 18 18.5C15.5147 18.5 13.5 16.7091 13.5 14.5C13.5 12.2909 15.5147 10.5 18 10.5C20.4853 10.5 22.5 12.2909 22.5 14.5Z" fill="#087B50"/>
+          </svg>
+          <span class="brand-name">NutriHub</span>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <!-- PRINCIPAL -->
+        <div class="nav-group">
+          <span class="nav-label">Principal</span>
+          <a href="../HTML/home.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <span>Home</span>
+          </a>
+        </div>
+
+        <!-- ALIMENTAÇÃO -->
+        <div class="nav-group">
+          <span class="nav-label">Alimentação</span>
+          <a href="../HTML/hist.html" class="nav-item active">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Histórico Alimentar</span>
+          </a>
+          <a href="../HTML/plano.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span>Plano Alimentar</span>
+          </a>
+        </div>
+
+        <!-- ACOMPANHAMENTO -->
+        <div class="nav-group">
+          <span class="nav-label">Acompanhamento</span>
+          <a href="../HTML/metas.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+            <span>Metas</span>
+          </a>
+          <a href="../HTML/progresso.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+            <span>Meu Progresso</span>
+          </a>
+          <a href="../HTML/perfil.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <span>Meu Perfil</span>
+          </a>
+        </div>
+
+        <!-- CONFIGURAÇÕES -->
+        <div class="nav-group nav-group-bottom">
+          <span class="nav-label">Configurações</span>
+          <a href="../HTML/config.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            <span>Configurações</span>
+          </a>
+          <a href="../HTML/index.html" class="nav-item nav-logout">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+            <span>Sair da Conta</span>
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main class="main-content">
+      <header class="page-header">
+        <div class="header-titles">
+          <h1 class="page-title">Registrar Refeição</h1>
+          <p class="page-description">Informe os detalhes da refeição, alimentos e consumo de água.</p>
+        </div>
+        <div class="header-actions">
+          <div class="user-avatar" id="header-avatar">—</div>
+        </div>
+      </header>
+
+      <form id="registro-form" class="registro-form">
+        <!-- SEÇÃO 1: INFORMAÇÕES DA REFEIÇÃO -->
+        <section class="section-card">
+          <h2 class="section-title">Dados da Refeição</h2>
+          <p class="section-subtitle">Identifique o tipo da refeição, a data e o horário.</p>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="meal-type">Tipo de Refeição</label>
+              <select id="meal-type" class="form-select" required>
+                <option value="" disabled selected>Selecione a refeição</option>
+                <option value="café da manhã">Café da Manhã</option>
+                <option value="almoço">Almoço</option>
+                <option value="lanche da tarde">Lanche da Tarde</option>
+                <option value="jantar">Jantar</option>
+                <option value="ceia">Ceia / Lanche da Noite</option>
+                <option value="apenas hidratação">Apenas Hidratação (Água)</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="meal-date">Data</label>
+              <input type="date" id="meal-date" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="meal-time">Horário</label>
+              <input type="time" id="meal-time" class="form-input" required>
+            </div>
+
+            <div class="form-group">
+              <label for="meal-local">Local da Refeição</label>
+              <select id="meal-local" class="form-select">
+                <option value="">Não informar</option>
+                <option value="Em casa">Em casa</option>
+                <option value="Trabalho / Escola">Trabalho / Escola</option>
+                <option value="Restaurante">Restaurante</option>
+                <option value="Outro local">Outro local</option>
+              </select>
+            </div>
+
+            <div class="form-group full-width">
+              <label for="meal-title">Nome da Refeição (opcional)</label>
+              <input type="text" id="meal-title" class="form-input" placeholder="Ex: Almoço de domingo, Lanche pré-treino" maxlength="60">
+            </div>
+          </div>
+        </section>
+
+        <!-- SEÇÃO 2: CONSUMO DE ÁGUA (NOVA) 
+        <section class="section-card">
+          <h2 class="section-title">Consumo de Água (Hidratação)</h2>
+          <p class="section-subtitle">Informe se você bebeu água junto com a refeição ou neste horário para atualizar sua meta de hidratação.</p>
+
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="water-quantity">Quantidade de Água (ml)</label>
+              <input type="number" id="water-quantity" class="form-input" placeholder="Ex: 250, 500" min="0" step="50">
+            </div>
+            <div class="form-group full-width" style="display: flex; gap: 10px; align-items: flex-end;">
+              <button type="button" class="btn-secondary" id="btn-add-water-200">+200 ml (Copo)</button>
+              <button type="button" class="btn-secondary" id="btn-add-water-500">+500 ml (Garrafa)</button>
+            </div>
+          </div>
+        </section> -->
+
+        <!-- SEÇÃO 3: ALIMENTOS CONSUMIDOS -->
+        <section class="section-card">
+          <h2 class="section-title">Alimentos e Porções</h2>
+          <p class="section-subtitle">Adicione os itens consumidos nesta refeição. Você pode editar ou remover cada item depois de adicionado.</p>
+
+          <div class="food-input-box">
+            <div class="form-group food-name-group">
+              <label for="food-name">Nome do Alimento</label>
+              <input type="text" id="food-name" class="form-input" placeholder="Ex: Arroz integral, Ovos mexidos, Maçã">
+            </div>
+
+            <div class="form-group food-qty-group">
+              <label for="food-portion">Porção / Quantidade</label>
+              <input type="text" id="food-portion" class="form-input" placeholder="Ex: 100g, 2 unidades, 1 fatia">
+            </div>
+
+            <div class="form-group food-qty-group">
+              <label for="food-calories">Calorias (kcal) — opcional</label>
+              <input type="number" id="food-calories" class="form-input" placeholder="Ex: 120" min="0" max="10000" step="any">
+            </div>
+
+            <button type="button" class="btn-secondary" id="btn-add-food">+ Adicionar Item</button>
+            <button type="button" class="btn-secondary" id="btn-cancel-food-edit" hidden>Cancelar edição</button>
+          </div>
+
+          <!-- LISTA DINÂMICA DE ALIMENTOS ADICIONADOS -->
+          <div class="added-foods-container">
+            <h3 class="added-foods-title">Alimentos na refeição:</h3>
+            <ul id="foods-list" class="foods-list">
+              <li class="empty-food-msg">Nenhum alimento adicionado até o momento.</li>
+            </ul>
+            <p class="foods-total" id="foods-total" hidden></p>
+          </div>
+        </section>
+
+        <!-- SEÇÃO 4: OBSERVAÇÕES -->
+        <section class="section-card">
+          <h2 class="section-title">Observações</h2>
+          <p class="section-subtitle">Anote algo importante sobre esta refeição, como sensações, preparo ou contexto.</p>
+
+          <div class="form-group">
+            <label for="meal-notes">Observações (opcional)</label>
+            <textarea id="meal-notes" class="form-input" rows="3" maxlength="300" placeholder="Ex: Comi com pressa, me senti satisfeito, refeição preparada em casa."></textarea>
+          </div>
+        </section>
+
+        <!-- AÇÕES DO FORMULÁRIO -->
+        <div class="form-actions">
+          <a href="../HTML/hist.html" class="btn-cancel">Cancelar</a>
+          <button type="submit" class="btn-primary" id="btn-save-meal">Salvar Refeição</button>
+        </div>
+      </form>
+    </main>
+  </div>
+
+  <script src="../JAVASCRIPT/app.js"></script>
+</body>
+</html>

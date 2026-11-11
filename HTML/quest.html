@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriHub - Perfil Inicial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/quest.css">
+</head>
+<body>
+
+  <main class="quest-container">
+    <header class="quest-header" id="quest-header" hidden>
+      <div class="brand-mini">
+        <svg class="logo-icon" width="28" height="28" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect width="36" height="36" rx="10" fill="#16A36A"/>
+          <path d="M18 8C12.4772 8 8 12.4772 8 18C8 23.5228 12.4772 28 18 28C23.5228 28 28 23.5228 28 18C28 12.4772 13.8579 10.5 18 10.5V25.5Z" fill="#E8F7EF"/>
+          <path d="M22.5 14.5C22.5 16.7091 20.4853 18.5 18 18.5C15.5147 18.5 13.5 16.7091 13.5 14.5C20.4853 10.5 22.5 12.2909 22.5 14.5Z" fill="#087B50"/>
+        </svg>
+        <span class="brand-name">NutriHub</span>
+      </div>
+
+      <div class="progress-wrapper">
+        <div class="progress-info">
+          <span class="step-counter" id="step-counter">Pergunta 1 de 27</span>
+          <span class="percentage-text" id="percentage-text">4%</span>
+        </div>
+        <div class="progress-bar-bg">
+          <div class="progress-bar-fill" id="progress-fill" style="width: 4%;"></div>
+        </div>
+      </div>
+    </header>
+
+    <div class="quest-card">
+
+      <div class="flow-step active" id="step-welcome">
+        <div class="welcome-header">
+          <div class="brand-badge">
+            <svg class="logo-icon" width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect width="36" height="36" rx="10" fill="#16A36A"/>
+              <path d="M18 8C12.4772 8 8 12.4772 8 18C8 23.5228 12.4772 28 18 28C23.5228 28 28 23.5228 28 18C28 12.4772 13.8579 10.5 18 10.5V25.5Z" fill="#E8F7EF"/>
+              <path d="M22.5 14.5C22.5 16.7091 20.4853 18.5 18 18.5C15.5147 18.5 13.5 16.7091 13.5 14.5C20.4853 10.5 22.5 12.2909 22.5 14.5Z" fill="#087B50"/>
+            </svg>
+            <span class="brand-name">NutriHub</span>
+          </div>
+          <h1 class="welcome-title">Boas-vindas ao seu perfil alimentar!</h1>
+          <p class="welcome-subtitle">Queremos conhecer você melhor para personalizar toda a sua experiência na plataforma.</p>
+        </div>
+
+        <div class="welcome-info-grid">
+          <div class="info-card">
+            <div class="info-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16A36A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            </div>
+            <div class="info-text">
+              <strong>Duração estimada</strong>
+              <span>Apenas de 3 a 5 minutos.</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16A36A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+            </div>
+            <div class="info-text">
+              <strong>Seja o mais sincero possível</strong>
+              <span>Responda de acordo com a sua rotina real para que o acompanhamento seja preciso e eficiente.</span>
+            </div>
+          </div>
+
+          <div class="info-card">
+            <div class="info-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16A36A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+            </div>
+            <div class="info-text">
+              <strong>Por que realizar?</strong>
+              <span>Suas respostas ajustam seu painel, ajudam a acompanhar metas e organizam o histórico das suas refeições.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="welcome-cta">
+          <button type="button" class="btn-primary btn-large" id="btn-start-quiz">
+            <span>Vamos começar?</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+      </div>
+
+      <form id="quiz-form" hidden novalidate>
+
+        <div class="question-step" data-step="1">
+          <span class="block-tag">Bloco 1 — Perfil do usuário</span>
+          <h2 class="question-title">Qual é a sua faixa etária?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q1" value="Menos de 18 anos"><span class="opt-label">Menos de 18 anos</span></label>
+            <label class="option-card"><input type="radio" name="q1" value="18 a 24 anos"><span class="opt-label">18 a 24 anos</span></label>
+            <label class="option-card"><input type="radio" name="q1" value="25 a 34 anos"><span class="opt-label">25 a 34 anos</span></label>
+            <label class="option-card"><input type="radio" name="q1" value="35 a 44 anos"><span class="opt-label">35 a 44 anos</span></label>
+            <label class="option-card"><input type="radio" name="q1" value="45+ anos"><span class="opt-label">45 anos ou mais</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="2">
+          <span class="block-tag">Bloco 1 — Perfil do usuário</span>
+          <h2 class="question-title">Qual é a sua rotina principal?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q2" value="Estudo"><span class="opt-label">Estudo</span></label>
+            <label class="option-card"><input type="radio" name="q2" value="Trabalho"><span class="opt-label">Trabalho</span></label>
+            <label class="option-card"><input type="radio" name="q2" value="Ambos"><span class="opt-label">Ambos (Estudo e Trabalho)</span></label>
+            <label class="option-card"><input type="radio" name="q2" value="Outros"><span class="opt-label">Outros</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="3">
+          <span class="block-tag">Bloco 1 — Perfil do usuário</span>
+          <h2 class="question-title">Como você classificaria sua rotina diária?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q3" value="Tranquila"><span class="opt-label">Tranquila</span></label>
+            <label class="option-card"><input type="radio" name="q3" value="Moderada"><span class="opt-label">Moderada</span></label>
+            <label class="option-card"><input type="radio" name="q3" value="Corrida"><span class="opt-label">Corrida</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="4">
+          <span class="block-tag">Bloco 1 — Perfil do usuário</span>
+          <h2 class="question-title">Quantas refeições você costuma fazer por dia?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q4" value="1 a 2"><span class="opt-label">1 a 2 refeições</span></label>
+            <label class="option-card"><input type="radio" name="q4" value="3 a 4"><span class="opt-label">3 a 4 refeições</span></label>
+            <label class="option-card"><input type="radio" name="q4" value="5 ou mais"><span class="opt-label">5 ou mais refeições</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="5">
+          <span class="block-tag">Bloco 2 — Objetivos alimentares</span>
+          <h2 class="question-title">Qual é o seu principal objetivo com a alimentação?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q5" value="Ter mais energia"><span class="opt-label">Ter mais energia no dia a dia</span></label>
+            <label class="option-card"><input type="radio" name="q5" value="Organizar horários"><span class="opt-label">Organizar horários das refeições</span></label>
+            <label class="option-card"><input type="radio" name="q5" value="Comer com qualidade"><span class="opt-label">Comer com mais qualidade e variedade</span></label>
+            <label class="option-card"><input type="radio" name="q5" value="Acompanhar progresso"><span class="opt-label">Acompanhar meu progresso de saúde</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="6">
+          <span class="block-tag">Bloco 2 — Objetivos alimentares</span>
+          <h2 class="question-title">O que você mais deseja melhorar nos seus hábitos alimentares?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q6" value="Evitar pular refeições"><span class="opt-label">Evitar pular refeições importantes</span></label>
+            <label class="option-card"><input type="radio" name="q6" value="Aumentar consumo de água"><span class="opt-label">Aumentar a ingestão diária de água</span></label>
+            <label class="option-card"><input type="radio" name="q6" value="Reduzir ultraprocessados"><span class="opt-label">Reduzir o consumo de doces e ultraprocessados</span></label>
+            <label class="option-card"><input type="radio" name="q6" value="Variar o cardápio"><span class="opt-label">Incluir mais vegetais e opções saudáveis</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="7">
+          <span class="block-tag">Bloco 2 — Objetivos alimentares</span>
+          <h2 class="question-title">O que mais motiva você a cuidar da alimentação?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q7" value="Saúde e bem-estar"><span class="opt-label">Saúde e bem-estar geral</span></label>
+            <label class="option-card"><input type="radio" name="q7" value="Disposição"><span class="opt-label">Melhorar foco e disposição diária</span></label>
+            <label class="option-card"><input type="radio" name="q7" value="Longevidade"><span class="opt-label">Prevenção e longevidade</span></label>
+            <label class="option-card"><input type="radio" name="q7" value="Estilo de vida"><span class="opt-label">Construir um estilo de vida sustentável</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="8">
+          <span class="block-tag">Bloco 2 — Objetivos alimentares</span>
+          <h2 class="question-title">Você possui alguma meta alimentar específica?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q8" value="Comer salada no almoço"><span class="opt-label">Consumir vegetais no almoço e jantar</span></label>
+            <label class="option-card"><input type="radio" name="q8" value="Registrar refeições diárias"><span class="opt-label">Registrar todas as refeições do dia</span></label>
+            <label class="option-card"><input type="radio" name="q8" value="Beber 2L de água"><span class="opt-label">Atingir a meta diária de hidratação</span></label>
+            <label class="option-card"><input type="radio" name="q8" value="Nenhuma meta no momento"><span class="opt-label">Ainda não defini uma meta específica</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="9">
+          <span class="block-tag">Bloco 3 — Hábitos alimentares atuais</span>
+          <h2 class="question-title">Com que frequência você mantém horários regulares para comer?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q9" value="Sempre"><span class="opt-label">Sempre ou quase sempre</span></label>
+            <label class="option-card"><input type="radio" name="q9" value="Às vezes"><span class="opt-label">Às vezes</span></label>
+            <label class="option-card"><input type="radio" name="q9" value="Raramente"><span class="opt-label">Raramente ou nunca</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="10">
+          <span class="block-tag">Bloco 3 — Hábitos alimentares atuais</span>
+          <h2 class="question-title">Com que frequência você pula refeições?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q10" value="Frequentemente"><span class="opt-label">Frequentemente</span></label>
+            <label class="option-card"><input type="radio" name="q10" value="Ocasionalmente"><span class="opt-label">Ocasionalmente</span></label>
+            <label class="option-card"><input type="radio" name="q10" value="Raramente"><span class="opt-label">Raramente / Nunca</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="11">
+          <span class="block-tag">Bloco 3 — Hábitos alimentares atuais</span>
+          <h2 class="question-title">Como você avalia a qualidade da sua alimentação atualmente?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q11" value="Excelente"><span class="opt-label">Excelente</span></label>
+            <label class="option-card"><input type="radio" name="q11" value="Boa"><span class="opt-label">Boa</span></label>
+            <label class="option-card"><input type="radio" name="q11" value="Razoável"><span class="opt-label">Razoável</span></label>
+            <label class="option-card"><input type="radio" name="q11" value="Precisa melhorar"><span class="opt-label">Precisa melhorar bastante</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="12">
+          <span class="block-tag">Bloco 3 — Hábitos alimentares atuais</span>
+          <h2 class="question-title">Com que frequência você consome frutas e verduras?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q12" value="Todos os dias"><span class="opt-label">Todos os dias</span></label>
+            <label class="option-card"><input type="radio" name="q12" value="3 a 5 dias por semana"><span class="opt-label">3 a 5 dias por semana</span></label>
+            <label class="option-card"><input type="radio" name="q12" value="1 a 2 dias por semana"><span class="opt-label">1 a 2 dias por semana</span></label>
+            <label class="option-card"><input type="radio" name="q12" value="Raramente"><span class="opt-label">Raramente</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="13">
+          <span class="block-tag">Bloco 3 — Hábitos alimentares atuais</span>
+          <h2 class="question-title">Você costuma planejar suas refeições com antecedência?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q13" value="Sim, sempre"><span class="opt-label">Sim, sempre planejo</span></label>
+            <label class="option-card"><input type="radio" name="q13" value="Algumas vezes"><span class="opt-label">Algumas vezes</span></label>
+            <label class="option-card"><input type="radio" name="q13" value="Não, decido na hora"><span class="opt-label">Não, decido na hora</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="14">
+          <span class="block-tag">Bloco 4 — Preferências e restrições alimentares</span>
+          <h2 class="question-title">Você segue algum estilo alimentar específico?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q14" value="Sem estilo específico"><span class="opt-label">Onívoro (Sem restrição de grupo)</span></label>
+            <label class="option-card"><input type="radio" name="q14" value="Vegetariano"><span class="opt-label">Vegetariano</span></label>
+            <label class="option-card"><input type="radio" name="q14" value="Vegano"><span class="opt-label">Vegano</span></label>
+            <label class="option-card"><input type="radio" name="q14" value="Flexitariano"><span class="opt-label">Flexitariano</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="15">
+          <span class="block-tag">Bloco 4 — Preferências e restrições alimentares</span>
+          <h2 class="question-title">Quais tipos de alimentos você prefere consumir?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q15" value="Proteínas magras e grãos"><span class="opt-label">Proteínas magras, ovos e grãos integrais</span></label>
+            <label class="option-card"><input type="radio" name="q15" value="Frutas e saladas"><span class="opt-label">Frutas frescas, verduras e saladas</span></label>
+            <label class="option-card"><input type="radio" name="q15" value="Massas e carboidratos"><span class="opt-label">Massas, pães e raízes</span></label>
+            <label class="option-card"><input type="radio" name="q15" value="Pratos variados"><span class="opt-label">De tudo um pouco, sem preferência fixa</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="16">
+          <span class="block-tag">Bloco 4 — Preferências e restrições alimentares</span>
+          <h2 class="question-title">Existem tipos de alimentos que você evita consumir?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q16" value="Frituras e ultraprocessados"><span class="opt-label">Frituras e industrializados</span></label>
+            <label class="option-card"><input type="radio" name="q16" value="Doces e açúcares"><span class="opt-label">Doces e bebidas açucaradas</span></label>
+            <label class="option-card"><input type="radio" name="q16" value="Carnes vermelhas"><span class="opt-label">Carnes vermelhas / pesadas</span></label>
+            <label class="option-card"><input type="radio" name="q16" value="Nenhum em específico"><span class="opt-label">Não evito nenhum tipo de alimento</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="17">
+          <span class="block-tag">Bloco 4 — Preferências e restrições alimentares</span>
+          <h2 class="question-title">Você possui alguma alergia ou intolerância alimentar?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q17" value="Nenhuma"><span class="opt-label">Nenhuma alergia / intolerância</span></label>
+            <label class="option-card"><input type="radio" name="q17" value="Lactose"><span class="opt-label">Intolerância à Lactose</span></label>
+            <label class="option-card"><input type="radio" name="q17" value="Glúten"><span class="opt-label">Sensibilidade ao Glúten / Celíaco</span></label>
+            <label class="option-card"><input type="radio" name="q17" value="Outras"><span class="opt-label">Outra restrição específica</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="18">
+          <span class="block-tag">Bloco 4 — Preferências e restrições alimentares</span>
+          <h2 class="question-title">Existe alguma prioridade de saúde para o NutriHub considerar?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q18" value="Controle de açúcar"><span class="opt-label">Acompanhar ingestão de açúcares</span></label>
+            <label class="option-card"><input type="radio" name="q18" value="Controle de sódio"><span class="opt-label">Foco em alimentos leves / baixo sódio</span></label>
+            <label class="option-card"><input type="radio" name="q18" value="Digestão leve"><span class="opt-label">Refeições de fácil digestão</span></label>
+            <label class="option-card"><input type="radio" name="q18" value="Apenas organização"><span class="opt-label">Nenhuma prioridade médica específica</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="19">
+          <span class="block-tag">Bloco 5 — Organização e acompanhamento</span>
+          <h2 class="question-title">Qual é sua maior dificuldade para manter uma alimentação equilibrada?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q19" value="Falta de tempo"><span class="opt-label">Falta de tempo no dia a dia</span></label>
+            <label class="option-card"><input type="radio" name="q19" value="Falta de planejamento"><span class="opt-label">Falta de planejamento prévio</span></label>
+            <label class="option-card"><input type="radio" name="q19" value="Esquecimento"><span class="opt-label">Esquecimento dos registros</span></label>
+            <label class="option-card"><input type="radio" name="q19" value="Opções fora de casa"><span class="opt-label">Poucas opções saudáveis fora de casa</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="20">
+          <span class="block-tag">Bloco 5 — Organização e acompanhamento</span>
+          <h2 class="question-title">O que mais costuma atrapalhar sua rotina de refeições?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q20" value="Imprevistos de trabalho/estudo"><span class="opt-label">Imprevistos de horários no trabalho/estudo</span></label>
+            <label class="option-card"><input type="radio" name="q20" value="Cansaço no fim do dia"><span class="opt-label">Cansaço ao chegar em casa</span></label>
+            <label class="option-card"><input type="radio" name="q20" value="Ansiedade/Estresse"><span class="opt-label">Ansiedade ou hábitos impulsivos</span></label>
+            <label class="option-card"><input type="radio" name="q20" value="Falta de refeições prontas"><span class="opt-label">Não ter a refeição preparada com antecedência</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="21">
+          <span class="block-tag">Bloco 5 — Organização e acompanhamento</span>
+          <h2 class="question-title">Como você prefere acompanhar seus hábitos alimentares?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q21" value="Registro simples"><span class="opt-label">Registro rápido por lista diária</span></label>
+            <label class="option-card"><input type="radio" name="q21" value="Gráficos de progresso"><span class="opt-label">Gráficos de consistência semanal</span></label>
+            <label class="option-card"><input type="radio" name="q21" value="Metas visuais"><span class="opt-label">Indicadores visuais de metas concluídas</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="22">
+          <span class="block-tag">Bloco 5 — Organização e acompanhamento</span>
+          <h2 class="question-title">Você gostaria de receber lembretes para registrar refeições ou manter hábitos?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q22" value="Sim, diariamente"><span class="opt-label">Sim, lembretes diários</span></label>
+            <label class="option-card"><input type="radio" name="q22" value="Apenas em horários chave"><span class="opt-label">Apenas nos horários de refeição principais</span></label>
+            <label class="option-card"><input type="radio" name="q22" value="Não"><span class="opt-label">Não prefiro notificações</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="23">
+          <span class="block-tag">Bloco 5 — Organização e acompanhamento</span>
+          <h2 class="question-title">Com que frequência gostaria de acompanhar seu progresso?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q23" value="Diariamente"><span class="opt-label">Diariamente</span></label>
+            <label class="option-card"><input type="radio" name="q23" value="Semanalmente"><span class="opt-label">Semanalmente</span></label>
+            <label class="option-card"><input type="radio" name="q23" value="Mensalmente"><span class="opt-label">Mensalmente</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="24">
+          <span class="block-tag">Bloco 6 — Personalização da plataforma</span>
+          <h2 class="question-title">Que tipo de orientação você espera receber do NutriHub?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q24" value="Organização prática"><span class="opt-label">Dicas práticas de organização de rotina</span></label>
+            <label class="option-card"><input type="radio" name="q24" value="Lembretes de metas"><span class="opt-label">Status de metas e lembretes de consistência</span></label>
+            <label class="option-card"><input type="radio" name="q24" value="Insights visuais"><span class="opt-label">Análises de frequência alimentar nos gráficos</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="25">
+          <span class="block-tag">Bloco 6 — Personalização da plataforma</span>
+          <h2 class="question-title">Você prefere orientações simples ou relatórios mais detalhados?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q25" value="Simples"><span class="opt-label">Simples e diretas ao ponto</span></label>
+            <label class="option-card"><input type="radio" name="q25" value="Detalhadas"><span class="opt-label">Relatórios com métricas detalhadas</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="26">
+          <span class="block-tag">Bloco 6 — Personalização da plataforma</span>
+          <h2 class="question-title">Você prefere acompanhar metas diárias, semanais ou ambas?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q26" value="Diárias"><span class="opt-label">Metas diárias</span></label>
+            <label class="option-card"><input type="radio" name="q26" value="Semanais"><span class="opt-label">Metas semanais</span></label>
+            <label class="option-card"><input type="radio" name="q26" value="Ambas"><span class="opt-label">Ambas (Visão diária e semanal)</span></label>
+          </div>
+        </div>
+
+        <div class="question-step" data-step="27">
+          <span class="block-tag">Bloco 6 — Personalização da plataforma</span>
+          <h2 class="question-title">Como você gostaria de ver seu progresso na página principal?</h2>
+          <div class="options-grid">
+            <label class="option-card"><input type="radio" name="q27" value="Resumo visual"><span class="opt-label">Resumo por barras de porcentagem</span></label>
+            <label class="option-card"><input type="radio" name="q27" value="Linha do tempo"><span class="opt-label">Gráfico de linhas ao longo dos dias</span></label>
+            <label class="option-card"><input type="radio" name="q27" value="Cards de metas"><span class="opt-label">Cards de verificação simples de metas</span></label>
+          </div>
+        </div>
+
+        <div class="quest-footer">
+          <button type="button" class="btn-secondary" id="btn-prev" disabled>Voltar</button>
+          <button type="button" class="btn-primary" id="btn-next" disabled>
+            <span class="btn-text">Avançar</span>
+            <span class="btn-spinner" hidden aria-hidden="true"></span>
+          </button>
+        </div>
+
+      </form>
+
+      <div class="flow-step" id="step-celebration" hidden>
+        <div class="celebration-content">
+          <div class="celebration-icon-wrapper">
+            <svg class="celebration-icon" width="48" height="48" viewBox="0 0 24 24" fill="none" stroke="#16A36A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+              <polyline points="22 4 12 14.01 9 11.01"></polyline>
+            </svg>
+          </div>
+          <span class="block-tag">Questionário Concluído! 🎉</span>
+          <h1 class="welcome-title">Parabéns por dar este passo!</h1>
+          <p class="welcome-subtitle">
+            Analisamos suas escolhas e processamos suas preferências de rotina, horários e estilo de vida.
+          </p>
+          <p class="celebration-text">
+            O NutriHub já gerou o plano alimentar e a estrutura de acompanhamento ideal para o seu perfil.
+          </p>
+        </div>
+
+        <div class="welcome-cta">
+          <button type="button" class="btn-primary btn-large" id="btn-view-plan">
+            <span>Ver Meu Plano Personalizado</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="flow-step" id="step-plan-result" hidden>
+        <div class="welcome-header">
+          <span class="block-tag">Seu Perfil Exclusivo NutriHub</span>
+          <h1 class="welcome-title">Sua Rotina & Dieta Personalizada</h1>
+          <p class="welcome-subtitle">Com base nas suas escolhas, estruturamos a combinação ideal de acompanhamento para você:</p>
+        </div>
+
+        <div class="result-cards-container">
+          <article class="result-card">
+            <div class="result-card-header">
+              <div class="result-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16A36A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a10 10 0 1 0 10 10H12V2z"></path><path d="M12 12L2.1 12.1"></path><path d="M12 12l4.3 8.6"></path></svg>
+              </div>
+              <div>
+                <span class="result-card-category">Plano Alimentar Recomendado</span>
+                <h2 class="result-card-title" id="diet-name">Balanço Nutritivo & Praticidade</h2>
+              </div>
+            </div>
+            <p class="result-card-desc" id="diet-desc">Focado em alimentos integrais, vegetais variados e preparos práticos adaptados ao seu ritmo diário.</p>
+          </article>
+
+          <article class="result-card">
+            <div class="result-card-header">
+              <div class="result-icon-badge">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#16A36A" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+              </div>
+              <div>
+                <span class="result-card-category">Estrutura de Rotina</span>
+                <h2 class="result-card-title" id="routine-name">Acompanhamento Flexível Diário</h2>
+              </div>
+            </div>
+            <p class="result-card-desc" id="routine-desc">Lembretes pontuais para refeições principais com visualização em barras de progresso para não sobrecarregar sua rotina.</p>
+          </article>
+        </div>
+
+        <div class="welcome-cta">
+          <button type="button" class="btn-primary btn-large" id="btn-go-home">
+            <span>Começar a mudança</span>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"></line><polyline points="12 5 19 12 12 19"></polyline></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const stepWelcome = document.getElementById('step-welcome');
+      const questHeader = document.getElementById('quest-header');
+      const quizForm = document.getElementById('quiz-form');
+      const stepCelebration = document.getElementById('step-celebration');
+      const stepPlanResult = document.getElementById('step-plan-result');
+
+      const btnStartQuiz = document.getElementById('btn-start-quiz');
+      const btnViewPlan = document.getElementById('btn-view-plan');
+      const btnGoHome = document.getElementById('btn-go-home');
+
+      const steps = document.querySelectorAll('.question-step');
+      const totalSteps = steps.length;
+      let currentStep = 1;
+
+      const progressFill = document.getElementById('progress-fill');
+      const stepCounter = document.getElementById('step-counter');
+      const percentageText = document.getElementById('percentage-text');
+
+      const btnPrev = document.getElementById('btn-prev');
+      const btnNext = document.getElementById('btn-next');
+      const btnText = btnNext.querySelector('.btn-text');
+      const btnSpinner = btnNext.querySelector('.btn-spinner');
+
+      btnStartQuiz.addEventListener('click', () => {
+        stepWelcome.hidden = true;
+        stepWelcome.classList.remove('active');
+
+        questHeader.hidden = false;
+        quizForm.hidden = false;
+
+        updateUI();
+      });
+
+      function updateUI() {
+        steps.forEach(step => {
+          const stepNum = parseInt(step.getAttribute('data-step'));
+          step.classList.toggle('active', stepNum === currentStep);
+        });
+
+        const percentage = Math.round((currentStep / totalSteps) * 100);
+        progressFill.style.width = `${percentage}%`;
+        stepCounter.textContent = `Pergunta ${currentStep} de ${totalSteps}`;
+        percentageText.textContent = `${percentage}%`;
+
+        btnPrev.disabled = currentStep === 1;
+
+        if (currentStep === totalSteps) {
+          btnText.textContent = 'Concluir questionário';
+        } else {
+          btnText.textContent = 'Avançar';
+        }
+
+        validateCurrentStep();
+      }
+
+      function validateCurrentStep() {
+        const activeStepEl = document.querySelector(`.question-step[data-step="${currentStep}"]`);
+        if (!activeStepEl) return;
+
+        const radios = activeStepEl.querySelectorAll('input[type="radio"]');
+        const isValid = Array.from(radios).some(r => r.checked);
+
+        btnNext.disabled = !isValid;
+      }
+
+      document.querySelectorAll('input[type="radio"]').forEach(radio => {
+        radio.addEventListener('change', () => {
+          validateCurrentStep();
+        });
+      });
+
+      btnNext.addEventListener('click', () => {
+        if (currentStep < totalSteps) {
+          currentStep++;
+          updateUI();
+        } else {
+          btnNext.disabled = true;
+          btnText.textContent = 'Processando perfil...';
+          btnSpinner.hidden = false;
+
+          setTimeout(() => {
+            calculatePersonalizedPlan();
+
+            quizForm.hidden = true;
+            questHeader.hidden = true;
+
+            stepCelebration.hidden = false;
+            stepCelebration.classList.add('active');
+          }, 1200);
+        }
+      });
+
+      btnPrev.addEventListener('click', () => {
+        if (currentStep > 1) {
+          currentStep--;
+          updateUI();
+        }
+      });
+
+      function calculatePersonalizedPlan() {
+        const getAnswer = (qName) => {
+          const selected = document.querySelector(`input[name="${qName}"]:checked`);
+          return selected ? selected.value : '';
+        };
+
+        const q14Style = getAnswer('q14');
+        const q3Routine = getAnswer('q3');
+        const q5Goal = getAnswer('q5');
+
+        let dietTitle = "Equilíbrio & Praticidade Nutricional";
+        let dietDescription = "Plano alimentar variado e balanceado, desenvolvido para promover saúde contínua e fácil adaptação ao seu dia a dia.";
+
+        let routineTitle = "Acompanhamento Moderado Diário";
+        let routineDescription = "Estrutura equilibrada com metas flexíveis e registros rápidos para manter sua rotina organizada sem esforço excessivo.";
+
+        if (q14Style === 'Vegetariano' || q14Style === 'Vegano') {
+          dietTitle = `Plano Nutritivo ${q14Style}`;
+          dietDescription = "Foco em proteínas vegetais, leguminosas, sementes e vegetais ricos em micronutrientes essenciais.";
+        } else if (q5Goal === 'Ter mais energia') {
+          dietTitle = "Plano Vitalidade & Energia";
+          dietDescription = "Refeições ricas em carboidratos complexos de baixo índice glicêmico e gorduras boas para manter o pico de energia constante.";
+        } else if (q5Goal === 'Organizar horários') {
+          dietTitle = "Plano Estruturado por Horários";
+          dietDescription = "Combinações simplificadas divididas em intervalos regulares para evitar longos períodos de jejum.";
+        }
+
+        if (q3Routine === 'Corrida') {
+          routineTitle = "Rotina Dinâmica & Lembretes Práticos";
+          routineDescription = "Notificações nos horários chave de refeição e cards simplificados para registros rápidos em poucos segundos.";
+        } else if (q3Routine === 'Tranquila') {
+          routineTitle = "Acompanhamento Completo & Detalhado";
+          routineDescription = "Visão expandida de métricas alimentares e acompanhamento contínuo de metas de longo prazo.";
+        }
+
+        document.getElementById('diet-name').textContent = dietTitle;
+        document.getElementById('diet-desc').textContent = dietDescription;
+        document.getElementById('routine-name').textContent = routineTitle;
+        document.getElementById('routine-desc').textContent = routineDescription;
+      }
+
+      btnViewPlan.addEventListener('click', () => {
+        stepCelebration.hidden = true;
+        stepCelebration.classList.remove('active');
+
+        stepPlanResult.hidden = false;
+        stepPlanResult.classList.add('active');
+      });
+
+      btnGoHome.addEventListener('click', () => {
+        QuestionnaireModule.complete();
+      });
+    });
+  </script>
+
+  <script src="../JAVASCRIPT/app.js" defer></script>
+</body>
+</html>

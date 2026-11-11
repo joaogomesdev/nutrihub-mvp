@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NutriHub - Metas Nutricionais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../CSS/metas.css">
+</head>
+<body>
+
+  <div class="dashboard-layout">
+    <!-- SIDEBAR FIXA À ESQUERDA -->
+    <aside class="sidebar">
+      <div class="sidebar-brand">
+        <a href="../HTML/home.html" class="brand-logo">
+          <svg class="logo-icon" width="32" height="32" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="10" fill="#16A36A"/>
+            <path d="M18 8C12.4772 8 8 12.4772 8 18C8 23.5228 12.4772 28 18 28C23.5228 28 28 23.5228 28 18C28 12.4772 23.5228 8 18 8ZM18 25.5C13.8579 25.5 10.5 22.1421 10.5 18C10.5 13.8579 13.8579 10.5 18 10.5V25.5Z" fill="#E8F7EF"/>
+            <path d="M22.5 14.5C22.5 16.7091 20.4853 18.5 18 18.5C15.5147 18.5 13.5 16.7091 13.5 14.5C13.5 12.2909 15.5147 10.5 18 10.5C20.4853 10.5 22.5 12.2909 22.5 14.5Z" fill="#087B50"/>
+          </svg>
+          <span class="brand-name">NutriHub</span>
+        </a>
+      </div>
+
+      <nav class="sidebar-nav">
+        <!-- PRINCIPAL -->
+        <div class="nav-group">
+          <span class="nav-label">Principal</span>
+          <a href="../HTML/home.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg>
+            <span>Home</span>
+          </a>
+        </div>
+
+        <!-- ALIMENTAÇÃO -->
+        <div class="nav-group">
+          <span class="nav-label">Alimentação</span>
+          <a href="../HTML/hist.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
+            <span>Histórico Alimentar</span>
+          </a>
+          <a href="../HTML/plano.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+            <span>Plano Alimentar</span>
+          </a>
+        </div>
+
+        <!-- ACOMPANHAMENTO -->
+        <div class="nav-group">
+          <span class="nav-label">Acompanhamento</span>
+          <a href="../HTML/metas.html" class="nav-item active">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+            <span>Metas</span>
+          </a>
+          <a href="../HTML/progresso.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+            <span>Meu Progresso</span>
+          </a>
+          <a href="../HTML/perfil.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+            <span>Meu Perfil</span>
+          </a>
+        </div>
+
+        <!-- CONFIGURAÇÕES -->
+        <div class="nav-group nav-group-bottom">
+          <span class="nav-label">Configurações</span>
+          <a href="../HTML/config.html" class="nav-item">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"></path></svg>
+            <span>Configurações</span>
+          </a>
+          <a href="../HTML/index.html" class="nav-item nav-logout">
+            <svg class="nav-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+            <span>Sair da Conta</span>
+          </a>
+        </div>
+      </nav>
+    </aside>
+
+    <!-- ÁREA PRINCIPAL -->
+    <main class="main-content">
+      <!-- CABEÇALHO DA PÁGINA -->
+      <header class="page-header">
+        <div class="header-titles">
+          <h1 class="page-title">Metas Nutricionais</h1>
+          <p class="page-description">Defina seus objetivos alimentares e acompanhe sua consistência diária e semanal.</p>
+        </div>
+
+        <div class="header-actions">
+          <button type="button" class="btn-icon" aria-label="Notificações">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+          </button>
+          <div class="user-avatar" id="header-avatar">—</div>
+        </div>
+      </header>
+
+      <!-- AÇÕES DO TOPO E BOTÃO DE CRIAR META -->
+      <div class="action-bar-top">
+        <button type="button" class="btn-primary" id="btn-open-meta-modal">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="5" x2="12" y2="19"></line><line x1="5" y1="12" x2="19" y2="12"></line></svg>
+          <span>Criar nova meta</span>
+        </button>
+      </div>
+
+      <!-- CARDS INFORMATIVOS (INDICADORES) -->
+      <section class="goals-metrics-grid">
+        <div class="metric-card">
+          <div class="metric-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16A36A" stroke-width="2"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="6"></circle><circle cx="12" cy="12" r="2"></circle></svg>
+          </div>
+          <div class="metric-data">
+            <span class="metric-value" id="val-active-goals">0</span>
+            <span class="metric-label">Metas Ativas</span>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16A36A" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+          </div>
+          <div class="metric-data">
+            <span class="metric-value" id="val-completed-today">0</span>
+            <span class="metric-label">Concluídas Hoje</span>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16A36A" stroke-width="2"><polyline points="23 6 13.5 15.5 8.5 10.5 1 18"></polyline><polyline points="17 6 23 6 23 12"></polyline></svg>
+          </div>
+          <div class="metric-data">
+            <span class="metric-value" id="val-success-rate">0%</span>
+            <span class="metric-label">Taxa de Sucesso</span>
+          </div>
+        </div>
+
+        <div class="metric-card">
+          <div class="metric-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#16A36A" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
+          </div>
+          <div class="metric-data">
+            <span class="metric-value" id="val-streak">0 dias</span>
+            <span class="metric-label">Maior Sequência</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ÁREA DE METAS -->
+      <section class="goals-container">
+        <div class="section-header">
+          <h2 class="section-title">Minhas Metas</h2>
+          <div class="filter-pills">
+            <button type="button" class="pill-btn active" data-filter="all">Todas</button>
+            <button type="button" class="pill-btn" data-filter="diaria">Diárias</button>
+            <button type="button" class="pill-btn" data-filter="semanal">Semanais</button>
+          </div>
+        </div>
+
+        <!-- ESTADO VAZIO INICIAL 
+        <div class="empty-goals-card" id="empty-goals-state">
+          <div class="empty-illustration">
+            <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="32" cy="32" r="30" fill="#E8F7EF" stroke="#E1EAE4" stroke-width="2"/>
+              <circle cx="32" cy="32" r="16" stroke="#16A36A" stroke-width="2" stroke-dasharray="4 4"/>
+              <circle cx="32" cy="32" r="6" fill="#087B50"/>
+            </svg>
+          </div>
+          <h3 class="empty-title">Nenhuma meta cadastrada ainda</h3>
+          <p class="empty-text">Crie objetivos para consumo de água, porções de vegetais ou consistência de horários.</p>
+          <button type="button" class="btn-primary" id="btn-create-first">
+            <span>+ Criar primeira meta</span>
+          </button>
+        </div> -->
+
+        <!-- GRID DE METAS (RENDERIZADO DINAMICAMENTE VIA JS) -->
+        <div class="goals-grid" id="goals-grid" hidden></div>
+      </section>
+    </main>
+  </div>
+
+  <!-- POP-UP / MODAL NO MEIO DA TELA PARA CRIAR METAS -->
+  <div class="modal-overlay" id="meta-modal" hidden>
+    <div class="modal-card">
+      <div class="modal-header">
+        <h2 class="modal-title">Nova Meta Personalizada</h2>
+        <button type="button" class="btn-close-modal" id="btn-close-meta-modal" aria-label="Fechar">&times;</button>
+      </div>
+
+      <form id="meta-form">
+        <div class="form-group">
+          <label for="meta-title">Título da Meta</label>
+          <input type="text" id="meta-title" class="form-input" placeholder="Ex: Beber 3L de água por dia" required>
+        </div>
+
+        <div class="form-group">
+          <label for="meta-category">Categoria</label>
+          <select id="meta-category" class="form-select" required>
+            <option value="" disabled selected>Selecione a categoria</option>
+            <option value="Hidratação">Hidratação</option>
+            <option value="Alimentação">Alimentação</option>
+            <option value="Exercício">Exercício</option>
+            <option value="Hábito">Outro Hábito</option>
+          </select>
+        </div>
+
+        <div class="form-grid-modal">
+          <div class="form-group">
+            <label for="meta-target">Valor Alvo (Meta)</label>
+            <input type="number" id="meta-target" class="form-input" placeholder="Ex: 3000" step="1" required>
+          </div>
+
+          <div class="form-group">
+            <label for="meta-unit">Unidade</label>
+            <input type="text" id="meta-unit" class="form-input" placeholder="Ex: ml, g, dias" required>
+          </div>
+        </div>
+
+        <div class="modal-actions">
+          <button type="button" class="btn-secondary" id="btn-cancel-meta">Cancelar</button>
+          <button type="submit" class="btn-primary">Salvar Meta</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="../JAVASCRIPT/app.js" defer></script>
+</body>
+</html>
